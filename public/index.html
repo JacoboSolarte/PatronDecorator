@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Comidas Rápidas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Comidas Rápidas</h1>
+        <nav>
+            <a href="#menu">Menú</a>
+            <a href="#order">Pedido</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Menú</h2>
+        <div id="menu" class="">
+            <div class="menu-item">
+                <h3>Hamburguesa</h3>
+                <p>Jugosa hamburguesa con carne de res, lechuga y tomate.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>Deliciosa pizza con queso mozzarella y tus ingredientes favoritos.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Hot Dog</h3>
+                <p>Salchicha en pan suave con mostaza y ketchup.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Papas Fritas</h3>
+                <p>Crujientes papas fritas, perfectas como acompañante.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Sándwich</h3>
+                <p>Carne, queso, verduras, salsa, fiambres.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Tacos</h3>
+                <p>Auténticos tacos mexicanos con carne, cebolla y cilantro.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Sushi</h3>
+                <p>Rollo de sushi fresco con pescado y vegetales.</p>
+            </div>
+        </div>
+
+        <div id="order-container">
+            <h2 id="order">Realizar Pedido</h2>
+            <select id="food-item">
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Hot Dog">Hot Dog</option>
+                <option value="Papas Fritas">Papas Fritas</option>
+                <option value="Ensalada César">Sándwich</option>
+                <option value="Tacos">Tacos</option>
+                <option value="Sushi">Sushi</option>
+            </select>
+            <label>
+                <input type="checkbox" id="extra-cheese"> Queso Extra
+            </label>
+            <label>
+                <input type="checkbox" id="extra-sauce"> Salsa Extra
+            </label>
+            <button id="add-to-order"><i class="fas fa-plus"></i> Agregar a Pedido</button>
+        </div>
+        
+        <h2>Pedido</h2>
+        <ul id="order-list"></ul>
+        
+        <div class="button-group">
+            <button id="place-order"><i class="fas fa-check"></i> Realizar Pedido</button>
+            <button id="cancel-order"><i class="fas fa-times"></i> Cancelar Última Orden</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Comidas Rápidas. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
